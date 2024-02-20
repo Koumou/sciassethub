@@ -1,0 +1,430 @@
+
+.form-group {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-group label {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+textarea,
+.form-group textarea,
+.form-group select {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 13px!important;
+    margin-bottom: 3px;
+}
+
+.form-group:after {
+    /* content: '\2713'; */
+    font-size: 1.5rem;
+    opacity: 0;
+    color: var(--checkmark-color);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-30%);
+    transition: all ease .4s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    /* outline: none;
+    border-color: #777; */
+}
+
+/* .form-group.success input,
+.form-group.success select,
+{
+    border-color: var(--success-color);
+} */
+
+.form-group.error input,
+.form-group.error select {
+    border-color: #e74c3c;
+}
+
+.form-group.success:after {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.form-group small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-group.error small {
+    visibility: visible;
+}
+
+.outline-0{
+    outline: none!important;
+    /* box-shadow: none!important; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* ======================== */
+
+
+#heading {
+    text-transform: uppercase;
+    color: #673AB7;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 10px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="file"],
+textarea,
+/* #msform input, */
+#msform select,
+select,
+textarea,
+#msform textarea {
+    /* padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px */
+
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    border-bottom: 1px solid #777;
+    /* border-radius: 6px!important; */
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 13px!important;
+    margin-bottom: 3px;
+    
+}
+
+/* input>.b-danger{
+    border-bottom: 1px solid #ff0000!important;
+} */
+
+#msform select,
+textarea,
+input[type="file"]
+/* #msform input[type="submit"], */
+#msform textarea,
+#msform select:focus,
+#msform textarea,
+#msform input:focus,
+#msform textarea:focus,
+.password,
+.next {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    /* border: 1px solid #777!important; */
+        border-bottom: 1px solid #777;
+    border-radius: 6px!important;
+    outline-width: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+/* input[type="button"]:focus{
+    border-radius: 0px!important;
+
+} */
+input[type="button"],
+input[type="submit"]
+{
+    border: 1px solid transparent!important;
+    font-family: 'Poppins', sans-serif!important;
+    border: 1px solid white!important;
+    /* border-radius: 6px!important; */
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 13px!important;
+    margin-bottom: 3px;
+
+}
+
+
+
+.form-control:focus {
+    border-color: #777!important;
+    box-shadow: none;
+    /* font-size: small!important; */
+  }
+
+#msform .action-button {
+    width: 100px;
+    background: #673AB7;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button_ {
+    width: 150px;
+    background: #673AB7;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover, .action-button_:hover
+#msform .action-button:focus, .action-button_:focus{
+    background-color: #311B92
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 18px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left;
+    font-size: 13px!important;
+
+}
+
+.form-group {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#progressbar {
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #673AB7
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #info:before {
+    font-family: FontAwesome;
+    content: "\f129"
+}
+
+#progressbar #value_measurement:before {
+    font-family: FontAwesome;
+    content: "\f0e4"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #673AB7
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+/* ===================================== */
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #333;
+    position: absolute;
+    /* top: 6px; */
+    left: 1px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    /* opacity: 0; */
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    /* opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+} */
+}

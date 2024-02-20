@@ -1,0 +1,87 @@
+::selection {
+    background: #dbdbe3;
+    color: black;
+}
+
+.fixed-top{
+    position: fixed!important;
+    border-top: 1 solid black!important;
+}
+
+.navbar {
+    border-top: 5px; /* Set initial border as transparent */
+    border-bottom: 5px; /* Set initial border as transparent */
+
+    background: none; /* Remove any background styling */
+    background-image: linear-gradient(to right, #bcbcbc 25%, #e2d6ae 25%, #e2d6ae 50%, #ff815e 50%, #eb330b 75%, #313961 75%);
+    background-size: 100% 5px; /* Adjust the size of the gradient line */
+    background-position: top; /* Position the gradient line at the top */
+    background-repeat: no-repeat; /* Prevent the gradient from repeating */
+  }
+  
+
+
+.navbar-light,.bg-light{
+    background-color: #fff!important;
+    color: black!important;
+
+}
+
+.navbar-dark{
+    color: black!important;
+}
+
+.logo {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    transition: all 250ms linear;
+}
+
+.logo img {
+    height: 26px;
+    width: auto;
+    display: block;
+    filter: brightness(10%);
+    transition: all 250ms linear;
+}
+
+.dropdown-toggle::after {
+    display: none;
+  }
+.text-decoration-none{
+  text-decoration: none!important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width { 
+    /* margin: 2px; */
+    width: 2rem;
+}
+
+
+.dropdown-toggle::after { /*Remove the default dropdown toggle*/
+    display:none!important;
+}
+
+.navbar-light , nav, .bg-light {
+    
+    background-color: #ffc1ac!important;
+    opacity: 88%;
+}
+
+
+main {
+    margin-top: 50px!important;
+}
+
+
+ul .footer_ul_amrc li a{
+    color: #163c84!important;
+    font-weight: 800!important;
+}
+
+.footer_header{
+    color: white!important;
+}

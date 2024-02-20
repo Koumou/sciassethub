@@ -1,0 +1,12 @@
+
+  @media screen and (min-width: 768px) {
+    img_home {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    img_home {
+      max-width: 30%;
+    }
+  }

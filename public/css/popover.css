@@ -1,0 +1,11 @@
+/* needed for effect */
+.popover-content {
+	display: none;
+}
+
+/* optional shadow */
+.popover {
+	-moz-box-shadow: 0 0 8px #5b7d83;
+	-webkit-box-shadow: 0 0 8px #5b7d83;
+	box-shadow: 0 0 8px #5b7d83;
+}

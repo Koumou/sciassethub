@@ -1,0 +1,59 @@
+
+
+.value-button {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin: 0px;
+    width: 50px;
+    height: 40px;
+    text-align: center!important;
+    vertical-align: middle!important;
+    padding: 8px 0;
+    background: #c3c3c3!important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -2px;
+    background: #eee;
+
+    /* border-radius: 4px 0 0 4px; */
+  }
+  
+  form #increase {
+    margin-left: 0px;
+    padding-right: -2px;
+    background: #eee;
+
+    /* border-radius: 0 4px 4px 0; */
+  }
+  
+  /* form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  } */
+  
+  input#number {
+    text-align: center!important;
+    border: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }

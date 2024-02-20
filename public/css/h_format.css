@@ -1,0 +1,39 @@
+
+h5{
+  font-size:20px!important;
+  font-weight: 700px;;
+  color: #3b2e5a;
+}
+
+.responsive-h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-h2 {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .responsive-h2 {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .responsive-h2 {
+      font-size: 15px!important;
+      line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 280px) {
+    .responsive-h2 {
+      font-size: 120px!important;
+      line-height: 1.4;
+    }
+  }
