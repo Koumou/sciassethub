@@ -156,7 +156,7 @@
                     <!-- start group 1 -->
                     <li class="has-children">
                         <input id="group-5" class="acnav__checkbox" type="checkbox" hidden />
-                        <label class="acnav__label" for="group-5">School</label>
+                        <label class="acnav__label" for="group-5">Schools</label>
                         <!-- start level 2 -->
                         <ul class="acnav__list acnav__list--level2">
                             <li class="has-children">

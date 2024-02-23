@@ -16,11 +16,11 @@
         ?>
         @if(count($activate_account) == 0)
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Active inactive account:</strong> We've sent an activation email to the email address you registered with. Click the link in the email to activate your account. <span class="text-danger"> In case you haven't received it, you can have the email resent by <a href="/activate_account"><b class="text-danger">clicking here</b></a>.</span>
+            <strong>Inactive account:</strong> We've sent an activation email to the email address you registered with. Click the link in the email to activate your account. <span class="text-danger"> In case you haven't received it, you can have the email resent by <a href="/activate_account"><b class="text-danger">clicking here</b></a>.</span>
         </div>
         @else
         <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-            <strong>Active inactive account:</strong> We've re-sent an activation email to the email address you registered with. Click the link in the email to activate your account. In case you haven't received it, please check your spam folder.
+            <strong>Inactive account:</strong> We've re-sent an activation email to the email address you registered with. Click the link in the email to activate your account. In case you haven't received it, please check your spam folder.
         </div>
 
         @endif
