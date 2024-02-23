@@ -93,7 +93,7 @@ class StudentController extends Controller
 
     public function supervisor_confirmation($supervisor_reference, $research_reference)
     {
-        dd($supervisor_reference, $research_reference);
+        // dd($supervisor_reference, $research_reference);
         $supervisor_email_confirmation = Crypt::decryptString($supervisor_reference);
         $student_project_reference = Crypt::decryptString($research_reference);
 
@@ -130,7 +130,7 @@ class StudentController extends Controller
                     }
                 },
             ],
-            'topic' => 'required'
+            'topic' => 'required',
         ]);
 
         if ($validator_personal_information->fails()) {
@@ -153,6 +153,8 @@ class StudentController extends Controller
                 'supervisor_email' => Auth::user()->email,
                 'research_focus' => encrypt($request->research_focus),
                 'asset_category' => encrypt($request->topic),
+                'should_be_approved_by' => Auth::user()->email
+
             ]);
 
             $request->session()->flash('RESEARCH_PROJECT');
@@ -163,8 +165,9 @@ class StudentController extends Controller
                 'supervisor_title' => encrypt(ucwords($request->title)),
                 'supervisor_name' => encrypt(ucwords($request->supervisor)),
                 'supervisor_email' => "-",
-                'research_focus' => encrypt($request->research_focus),
+                'research_focus' => encrypt($request->research_focus),  
                 'asset_category' => encrypt($request->topic),
+                'should_be_approved_by' => $request->supervisor_email
             ]);
 
             $details = [
@@ -178,7 +181,6 @@ class StudentController extends Controller
             ];
 
             Mail::to($request->supervisor_email)->send(new \App\Mail\Supervisor_notification($details));
-
 
             $request->session()->flash('RESEARCH_PROJECT');
             return redirect()->back();

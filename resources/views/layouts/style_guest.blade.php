@@ -184,7 +184,7 @@
                 @if((Auth::user()->gender != '-'))
 
 
-                @if(URL::route('my_student') === URL::current() || URL::route('dashboard') === URL::current() || URL::route('history') === URL::current() || URL::route('profile') === URL::current() || URL::route ('message') === URL::current() || URL::route ('search.index') === URL::current())
+                @if(URL::route('my_student_supervision') === URL::current() || URL::route('dashboard') === URL::current() || URL::route('history') === URL::current() || URL::route('profile') === URL::current() || URL::route ('message') === URL::current() || URL::route ('search.index') === URL::current())
 
                 <li class="nav-item px-lg-2 pt-3"> <a class="nav-link" href="/search"><span class=""></span><i class="fa fa-search"> <?php
                                                                                                                                       // Illuminate\Support\Facades\Cache::forget('asset_search');
@@ -198,8 +198,8 @@
                 </li>
 
                 @if(Illuminate\Support\Facades\Crypt::decrypt(Auth::user()->position_id) != 5)
-                <li class="nav-item pt-3 {{ URL::route('my_student') === URL::current() ? 'active' : '' }}">
-                  <a class="nav-link" href="/my_student">
+                <li class="nav-item pt-3 {{ URL::route('my_student_supervision') === URL::current() ? 'active' : '' }}">
+                  <a class="nav-link" href="/my_student_supervision">
                     <span class="d-inline-block d-lg-none icon-width">
                       <i class="fas fa-envelope"></i></span>My student
                     <span class="badge badge-pill badge-danger">

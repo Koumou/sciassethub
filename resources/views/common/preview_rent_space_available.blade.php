@@ -23,169 +23,45 @@
     <div class="row py-4">
         <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="dropdown py-2">
-               <!-- start accordion nav block -->
-               <nav class="acnav" role="navigation">
-                            <!-- start level 1 -->
-                            <ul class="acnav__list acnav__list--level1">
 
-                                <!-- start group 1 -->
-                                <li class="has-children">
-                                    <input id="group-1" class="acnav__checkbox" type="checkbox" hidden />
-                                    <label class="acnav__label" for="group-1">Faculty of Natural Sciences</label>
-                                    <!-- start level 2 -->
-                                    <ul class="acnav__list acnav__list--level2">
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Biodiversity and Conservation Biology</a>
-                                        </li>
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Biotechnology</a>
-                                        </li>
 
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Chemistry</a>
-                                        </li>
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Computer Science</a>
-                                        </li>
+                <section class="nav-wrp mx-0">
 
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Earth Sciences</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Mathematics and Applied Mathematics</a>
-                                        </li>
-                                        <li class="has-children">
-                                            <input id="group-1-1" class="acnav__checkbox" type="checkbox" hidden />
-                                            <label class="acnav__label acnav__label--level2" for="group-1-1">Department of Medical Biosciences</label>
-                                            <!-- start level 3 -->
-                                            <ul class="acnav__list acnav__list--level3">
-                                                <li>
-                                                    <a class="acnav__link acnav__link--level3" href="/all_asset_available/Chemical">Chemical</a>
-                                                </li>
-                                                <li>
-                                                    <a class="acnav__link acnav__link--level3" href="/all_asset_available/Equipment">Equipment</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Physics and Astronomy</a>
-                                        </li>
-                                        <li>
-                                            <a class="acnav__link acnav__link--level2" href="#">Department of Statistics and Population Studies</a>
-                                        </li>
-                                        <!-- end level 3 -->
-                                </li>
-
-                            </ul>
-                            <!-- end level 2 -->
-                            </li>
-                            <!-- end group 1 -->
-
-                            <!-- start group 2 -->
-                            <li class="has-children">
-                                <input id="group-2" class="acnav__checkbox" type="checkbox" hidden />
-                                <label class="acnav__label" for="group-2">Faculty of Community and Health Sciences</label>
-                                <!-- start level 2 -->
-                                <ul class="acnav__list acnav__list--level2">
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Dietetics and Nutrition</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Occupational Therapy</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Physiotherapy</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Psychology</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Social Work</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Sport, Recreation and Exercise Science</a>
-                                    </li>
-                                </ul>
-                                <!-- end level 2 -->
-                            </li>
-                            <!-- end group 2 -->
-
-                            <!-- start group 3 -->
-                            <li class="has-children">
-                                <input id="group-3" class="acnav__checkbox" type="checkbox" hidden />
-                                <label class="acnav__label" for="group-3">Faculty of Dentistry</label>
-                                <!-- start level 2 -->
-                                <ul class="acnav__list acnav__list--level2">
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Community Oral Health</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Craniofacial Biology, Pathology and Radiology</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Maxillofacial and Oral Surgery and Anaesthesiology and Sedation</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Oral Hygiene</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Oral Medicine and Periodontology</a>
-                                    </li>
-                                </ul>
-                                <!-- end level 2 -->
-                            </li>
-                            <!-- end group 3 -->
-                            <!-- start group 3 -->
-                            <li class="has-children">
-                                <input id="group-4" class="acnav__checkbox" type="checkbox" hidden />
-                                <label class="acnav__label" for="group-4">Faculty of Economic and Management Sciences</label>
-                                <!-- start level 2 -->
-                                <ul class="acnav__list acnav__list--level2">
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Accounting</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Finance</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Industrial Psychology</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Information Systems</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Management and Entrepreneurship</a>
-                                    </li>
-                                    <li>
-                                        <a class="acnav__link acnav__link--level2" href="#">Department of Political Studies</a>
-                                    </li>
-                                </ul>
-                                <!-- end level 2 -->
-                            </li>
+                    <!-- start accordion nav block -->
+                    <nav class="acnav" role="navigation">
+                        <!-- start level 1 -->
+                        <ul class="acnav__list acnav__list--level1">
 
                             <!-- start group 1 -->
                             <li class="has-children">
-                                <input id="group-5" class="acnav__checkbox" type="checkbox" hidden />
-                                <label class="acnav__label" for="group-5">School and Divisions</label>
+                                <input id="group-1" class="acnav__checkbox" type="checkbox" hidden />
+                                <label class="acnav__label" for="group-1">Faculty of Natural Sciences</label>
                                 <!-- start level 2 -->
                                 <ul class="acnav__list acnav__list--level2">
-                                    <li class="has-children">
-                                        <input id="group-5-1" class="acnav__checkbox" type="checkbox" hidden />
-                                        <label class="acnav__label acnav__label--level2" for="group-5-1">School of Nursing</label>
-                                        <!-- start level 3 -->
-                                        <ul class="acnav__list acnav__list--level3">
-                                            <li>
-                                                <a class="acnav__link acnav__link--level3" href="/all_asset_available/Equipment">Equipment</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Biodiversity and Conservation Biology</a>
                                     </li>
-                                </ul>
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Biotechnology</a>
+                                    </li>
 
-                                <ul class="acnav__list acnav__list--level2">
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Chemistry</a>
+                                    </li>
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Computer Science</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Earth Sciences</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Mathematics and Applied Mathematics</a>
+                                    </li>
                                     <li class="has-children">
-                                        <input id="group-5-2" class="acnav__checkbox" type="checkbox" hidden />
-                                        <label class="acnav__label acnav__label--level2" for="group-5-2">School of Pharmacy</label>
+                                        <input id="group-1-1" class="acnav__checkbox" type="checkbox" hidden />
+                                        <label class="acnav__label acnav__label--level2" for="group-1-1">Department of Medical Biosciences</label>
                                         <!-- start level 3 -->
                                         <ul class="acnav__list acnav__list--level3">
                                             <li>
@@ -196,18 +72,173 @@
                                             </li>
                                         </ul>
                                     </li>
-                                </ul>
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Physics and Astronomy</a>
+                                    </li>
+                                    <li>
+                                        <a class="acnav__link acnav__link--level2" href="#">Department of Statistics and Population Studies</a>
+                                    </li>
                                     <!-- end level 3 -->
                             </li>
 
+                        </ul>
+                        <!-- end level 2 -->
+                        </li>
+                        <!-- end group 1 -->
+
+                        <!-- start group 2 -->
+                        <li class="has-children">
+                            <input id="group-2" class="acnav__checkbox" type="checkbox" hidden />
+                            <label class="acnav__label" for="group-2">Faculty of Community and Health Sciences</label>
+                            <!-- start level 2 -->
+                            <ul class="acnav__list acnav__list--level2">
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Dietetics and Nutrition</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Occupational Therapy</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Physiotherapy</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Psychology</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Social Work</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Sport, Recreation and Exercise Science</a>
+                                </li>
                             </ul>
                             <!-- end level 2 -->
-                            </li>
+                        </li>
+                        <!-- end group 2 -->
 
+                        <!-- start group 3 -->
+                        <li class="has-children">
+                            <input id="group-3" class="acnav__checkbox" type="checkbox" hidden />
+                            <label class="acnav__label" for="group-3">Faculty of Dentistry</label>
+                            <!-- start level 2 -->
+                            <ul class="acnav__list acnav__list--level2">
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Community Oral Health</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Craniofacial Biology, Pathology and Radiology</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Maxillofacial and Oral Surgery and Anaesthesiology and Sedation</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Oral Hygiene</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Oral Medicine and Periodontology</a>
+                                </li>
                             </ul>
-                            <!-- end level 1 -->
-                        </nav>
-                     
+                            <!-- end level 2 -->
+                        </li>
+                        <!-- end group 3 -->
+                        <!-- start group 3 -->
+                        <li class="has-children">
+                            <input id="group-4" class="acnav__checkbox" type="checkbox" hidden />
+                            <label class="acnav__label" for="group-4">Faculty of Economic and Management Sciences</label>
+                            <!-- start level 2 -->
+                            <ul class="acnav__list acnav__list--level2">
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Accounting</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Finance</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Industrial Psychology</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Information Systems</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Management and Entrepreneurship</a>
+                                </li>
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">Department of Political Studies</a>
+                                </li>
+                            </ul>
+                            <!-- end level 2 -->
+                        </li>
+
+                        <!-- start group 1 -->
+                        <li class="has-children">
+                            <input id="group-5" class="acnav__checkbox" type="checkbox" hidden />
+                            <label class="acnav__label" for="group-5">School</label>
+                            <!-- start level 2 -->
+                            <ul class="acnav__list acnav__list--level2">
+                                <li class="has-children">
+                                    <input id="group-5-1" class="acnav__checkbox" type="checkbox" hidden />
+                                    <label class="acnav__label acnav__label--level2" for="group-5-1">School of Nursing</label>
+                                    <!-- start level 3 -->
+                                    <ul class="acnav__list acnav__list--level3">
+                                        <li>
+                                            <a class="acnav__link acnav__link--level3" href="/all_asset_available/Equipment">Equipment</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="acnav__list acnav__list--level2">
+                                <li class="has-children">
+                                    <input id="group-5-2" class="acnav__checkbox" type="checkbox" hidden />
+                                    <label class="acnav__label acnav__label--level2" for="group-5-2">School of Pharmacy</label>
+                                    <!-- start level 3 -->
+                                    <ul class="acnav__list acnav__list--level3">
+                                        <li>
+                                            <a class="acnav__link acnav__link--level3" href="/all_asset_available/Chemical">Chemical</a>
+                                        </li>
+                                        <li>
+                                            <a class="acnav__link acnav__link--level3" href="/all_asset_available/Equipment">Equipment</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="acnav__list acnav__list--level2">
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">School of Public Health</a>
+                                </li>
+                            </ul>
+                            <ul class="acnav__list acnav__list--level2">
+
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">School of Natural Medecine</a>
+                                </li>
+                            </ul>
+                            <ul class="acnav__list acnav__list--level2">
+
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">School of Science and Mathematics Education</a>
+                                </li>
+                            </ul>
+                            <ul class="acnav__list acnav__list--level2">
+
+                                <li>
+                                    <a class="acnav__link acnav__link--level2" href="#">School of Government</a>
+                                </li>
+                            </ul>
+                            </ul>
+                            <!-- end level 3 -->
+                        </li>
+
+                        </ul>
+                        <!-- end level 2 -->
+                        </li>
+
+                        </ul>
+                        <!-- end level 1 -->
+                    </nav>
+                    <!-- end accordion nav block -->
+
+                </section>
+
             </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12">
@@ -510,7 +541,7 @@
                                     $currentDate = date('Y-m-d');
                                     $minDate = date('Y-m-d');
                                     ?>
-                                        @if($user_account_status == "active")
+                                    @if($user_account_status == "active")
 
                                     <form id="msform" method="POST" action="/rent_space_available/preview_rent_space_available/{{$space_rent_reference}}/{{$rent_space_availk_->user_reference}}/sent_request" enctype="multipart/form-data" data-netlify-recaptcha="true" data-netlify="true">
                                         {{ csrf_field() }}
@@ -529,7 +560,7 @@
                                                 <input type="date" name="rent_end_date_confirmed" min="{{gzuncompress($start_decrypt)}}" value="{{gzuncompress($end_decrypt)}}" />
                                             </div>
 
-                                            
+
 
                                             <!-- <div class="form-group col-md-12">
                                                 <label class="fieldlabels">Type of the storage *</label>
@@ -558,13 +589,13 @@
                                         @endif
                                     </form>
                                     @else
-                    <div class="m-0 p-0 pt-0">
-                        <b class="text-danger">Your account has not been activated yet. Please activate your account to be able to request an asset. <br />To activate your account, go to your email account, search for <u class="text-danger">SciAssetHub</u>, open the email titled "Verify your email address," scroll down, and click on the orange button that says "Activate your account."</b>
-                    </div>
-                    @endif
+                                    <div class="m-0 p-0 pt-0">
+                                        <b class="text-danger">Your account has not been activated yet. Please activate your account to be able to request an asset. <br />To activate your account, go to your email account, search for <u class="text-danger">SciAssetHub</u>, open the email titled "Verify your email address," scroll down, and click on the orange button that says "Activate your account."</b>
+                                    </div>
+                                    @endif
                                 </div>
 
-                                
+
 
                                 @else
 
@@ -605,7 +636,7 @@
                                 <?php
                                 $space_rent_other_suggestion = $all_available_space_recommendation->where('space_request_id', '!==', $space_rent_reference);
                                 $current_space_rent_selected = $space_rent_other_suggestion->where('space_request_id', '!==', $space_rent_reference);
-                             ?>
+                                ?>
                                 @if(count($current_space_rent_selected) != 0)
                                 @foreach($current_space_rent_selected->take(1) as $rent_space_availk_)
                                 <div class="pt-5 pb-0 mb-0">

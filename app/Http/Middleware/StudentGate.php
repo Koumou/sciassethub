@@ -27,7 +27,6 @@ class StudentGate
                 ->where('student_reference', Auth::user()->email)
                 ->first();
 
-            // dd($research_project_data_);
             if ($research_project_data_ != NULL) {
                 if ($research_project_data_->supervisor_email != '-')
                     return $next($request);

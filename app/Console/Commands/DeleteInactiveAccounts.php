@@ -40,7 +40,7 @@ class DeleteInactiveAccounts extends Command
     public function handle()
     {
         // return 0;
-        $threshold = now()->subMinutes(15); // Accounts older than 3 days
+        $threshold = now()->subMinutes(48); // Accounts older than 3 days
       return  User::where('email_verified_at', null)
             ->where('created_at', '<', $threshold)
             ->delete();

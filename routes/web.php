@@ -23,12 +23,15 @@ Auth::routes();
 // });
 
 Route::get('/search', [App\Http\Controllers\PublicController::class, 'search'])->name('search.index');
+Route::get('/my_student_supervision', [App\Http\Controllers\AssetController::class, 'my_student_supervision'])->name('my_student_supervision');
 
 Route::get('/reset_password', [App\Http\Controllers\PublicController::class, 'reset_password'])->name('reset_password.index');
 Route::post('/reset_password', [App\Http\Controllers\PublicController::class, 'reset_'])->name('reset_password');
 Route::post('/new_password', [App\Http\Controllers\PublicController::class, 'new_password'])->name('new_password');
 
 Route::get('/set_password', [App\Http\Controllers\PublicController::class, 'set_password'])->name('set_password.index');
+
+Route::get('/Auth_User', [App\Http\Controllers\PublicController::class, 'auth_user'])->name('auth_user.api');
 
 
 Route::post('/set_password', [App\Http\Controllers\PublicController::class, 'set_new_password'])->name('set_password');
@@ -80,7 +83,8 @@ Route::group(['middleware' => ['studentGate']], function () {
 
 
     Route::get('/dashboard/asset_requested', [App\Http\Controllers\AssetController::class, 'asset_requested'])->name('dashboard.asset_requested');
-    Route::get('/my_student', [App\Http\Controllers\AssetController::class, 'my_student'])->name('my_student');
+    Route::get('/my_student/{reference_student}', [App\Http\Controllers\AssetController::class, 'my_student'])->name('my_student');
+
     Route::get('/my_student/{reference}/{feedback}', [App\Http\Controllers\AssetController::class, 'my_student_feedback'])->name('my_student.feedback');
 
 

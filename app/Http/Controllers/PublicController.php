@@ -21,6 +21,28 @@ use Illuminate\Support\Facades\Hash;
 class PublicController extends Controller
 {
 
+
+    // API
+
+    public function auth_user()
+    {
+
+        // if (Auth::user() != NULL) {
+            $retrieve_firstname = Cache::get("firstname");
+            $retrieve_lastname = Cache::get("lastname");
+
+
+
+
+
+            return $receivedData = [
+                "firstname" => $retrieve_firstname,
+                "username" => $retrieve_lastname,
+            ];
+        // } else {
+        //     return "Unauthorized";
+        // }
+    }
     public function index()
     {
         return view('welcome');

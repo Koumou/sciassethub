@@ -21,6 +21,7 @@ class CreateResearchProjectTable extends Migration
             $table->text('supervisor_email');
             $table->text('research_focus');
             $table->text('asset_category');
+            $table->text('should_be_approved_by');
             $table->timestamps();
         });
     }

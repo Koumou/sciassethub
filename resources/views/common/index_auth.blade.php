@@ -127,6 +127,26 @@
         </div>
 
         @elseif (Illuminate\Support\Facades\Crypt::decrypt(Auth::user()->position_id) === '5')
+
+        @if ($research_project_data === NULL)
+        <div class="pt-4">
+            <p>
+                You're almost there!
+            </p>
+            <p>
+                In adherence to SciAssetHub policy, system usage is restricted to students under the supervision of academic staff at the University of the Western Cape. You are required to fill the information about your supervisor by clicking on the profile icon in the top right corner of the screen and fill in the "Research Project" section.
+                Alternatively, you can use the following link (<a href="profile">https://sciassethub.com/profile</a>) to access the page and complete the required information. </p>
+
+            <p>
+                <br />
+                Thank you for your patiente.
+            </p>
+        </div>
+        @else ($research_project_data !== NULL)
+        <?php
+
+
+        ?>
         @if($research_project_data->supervisor_email != '-')
         <div class="order-card auto-fill">
 
@@ -203,9 +223,11 @@
         @endif
 
         @endif
+        @endif
 
     </div>
-    </ @endif </div>
+    @endif
+</div>
 
 
-    @endsection
+@endsection

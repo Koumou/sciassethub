@@ -74,11 +74,11 @@
                 </div>
                 <div class="panel panel-default card-input">
                     <div class="card-body  border-0 no-decoration">
-                    <a href="/dashboard/my_asset/category_chemical" class="no-decoration text-decoration:none text-decoration-*">
-                        <button class="btn btn-default" type="button">
-                            <i class="fa fa-folder mr-4" style="font-size:24px"></i> <b>Chemical > View</b>
-                        </button>
-                    </a>
+                        <a href="/dashboard/my_asset/category_chemical" class="no-decoration text-decoration:none text-decoration-*">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-folder mr-4" style="font-size:24px"></i> <b>Chemical > View</b>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -122,7 +122,7 @@
                             </p>
                             <div>
                                 <small class="pb-3 mb-3">
-                                Quantity in storage:   {{gzuncompress($asset_max_value_decrypt)}} {{ucfirst(gzuncompress($asset_unit_measurement_decrypt))}} 
+                                    Quantity in storage: {{gzuncompress($asset_max_value_decrypt)}} {{ucfirst(gzuncompress($asset_unit_measurement_decrypt))}}
                                 </small>
                                 <br />
                                 <div>
@@ -210,8 +210,8 @@
                             <div class="form-card">
                                 <div class="py-2 pb-4">
                                     <p>Dear {{Illuminate\Support\Facades\Crypt::decrypt(Auth::user()->title)}}. {{Illuminate\Support\Facades\Crypt::decrypt(Auth::user()->lastname)}},</p>
-                                    <p>You have 5 assets that have been requested by individuals within the University of the Western Cape. The system has temporarily placed the requested quantity on hold, adjusting the currently displayed quantity.
-                                        <br />
+                                    <p>
+                                        You may have assets requested by individuals within the University of the Western Cape. The system has temporarily placed the requested quantity on hold. However, please note that the system reserves the right to reject the quantity adjustment based on the inputs you provide.<br />
                                         <br />
 
                                         By clicking the 'I UNDERSTAND' button, you confirm that the SYSTEM SHOULD AMEND THE INFORMATION BASED ON THE INPUT YOU ARE ABOUT TO INSERT.

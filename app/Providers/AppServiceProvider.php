@@ -123,39 +123,40 @@ class AppServiceProvider extends ServiceProvider
 
 
     public static function difference_between_timestamp($date_time_provided)
-{
-    $timestamp = $date_time_provided;
-    $datetime = new DateTime($timestamp);  // Convert the timestamp to a DateTime object
-    $current_time = new DateTime(); // Get the current time
-    $time_difference = $current_time->diff($datetime); // Calculate the time difference
+    {
+        $timestamp = $date_time_provided;
+        $datetime = new DateTime($timestamp);  // Convert the timestamp to a DateTime object
+        $current_time = new DateTime(); // Get the current time
+        $time_difference = $current_time->diff($datetime); // Calculate the time difference
 
-    $minutes_ago = $time_difference->i; // Convert the time difference to minutes 
-    $hours_ago = $time_difference->h; // Convert the time difference to hours
-    $days_ago = $time_difference->days; // Convert the time difference to days
-    $month_ago = $time_difference->m;
-    $year_ago = $time_difference->y;
+        $minutes_ago = $time_difference->i; // Convert the time difference to minutes 
+        $hours_ago = $time_difference->h; // Convert the time difference to hours
+        $days_ago = $time_difference->days; // Convert the time difference to days
+        $month_ago = $time_difference->m;
+        $year_ago = $time_difference->y;
 
-    if ($days_ago == 0) {
-        if ($hours_ago != 0 && $hours_ago <= 24) {
-            return "{$hours_ago}h ago";
-        } elseif ($minutes_ago != 0 && $minutes_ago <= 60) {
-            return "{$minutes_ago} min ago";
+        if ($days_ago == 0) {
+            if ($hours_ago != 0 && $hours_ago <= 24) {
+                return "{$hours_ago}h ago";
+            } elseif ($minutes_ago != 0 && $minutes_ago <= 60) {
+                return "{$minutes_ago} min ago";
+            } else {
+                return "Just now";
+            }
+        } elseif ($days_ago <= 31) {
+            return "{$days_ago}d ago";
+        } elseif ($month_ago >= 1 && $month_ago <= 12) {
+            return "{$month_ago} mo ago";
+        } elseif ($year_ago != 0) {
+            return "{$year_ago}y ago";
         } else {
             return "Just now";
         }
-    } elseif ($days_ago <= 31) {
-        return "{$days_ago}d ago";
-    } elseif ($month_ago >= 1 && $month_ago <= 12) {
-        return "{$month_ago} mo ago";
-    } elseif ($year_ago != 0) {
-        return "{$year_ago}y ago";
-    } else {
-        return "Just now";
     }
-}
 
     public static  function FirstLetter($user_firstname)
     {
+
         $user_firstname_split = explode(" ", $user_firstname);
         if (count($user_firstname_split) == 1) {
             $inititals = $user_firstname_split[0][0];
@@ -263,7 +264,7 @@ class AppServiceProvider extends ServiceProvider
                     ->orderBy('asset_request.updated_at', 'ASC') //descending order
                     ->get();
 
-                    // dd($asset_requested_display_to_supervisor);
+                // dd($asset_requested_display_to_supervisor);
 
 
                 $asset_requested_by_requester = DB::table('asset_request')
@@ -292,12 +293,12 @@ class AppServiceProvider extends ServiceProvider
                     ->orderBy('rent_space.updated_at', 'desc')
                     ->get();
 
-                    $analyst_asset = DB::table('asset_request')
+                $analyst_asset = DB::table('asset_request')
                     ->join('assets', 'asset_request.asset_request_id', '=', 'assets.asset_id')
                     ->orderBy('assets.updated_at', 'desc')
                     ->get();
 
-                    // dd($analyst_asset);
+                // dd($analyst_asset);
 
                 // dd($asset_requested_display_to_supervisor);
                 $view->with('asset_requested_display_to_supervisor', $asset_requested_display_to_supervisor);
@@ -311,7 +312,6 @@ class AppServiceProvider extends ServiceProvider
                 $view->with('all_available_space_recommendation', $all_available_space_recommendation);
                 $view->with('asset_requested_by_requester', $asset_requested_by_requester);
 
-
                 $view->with('asset_requested_display', $asset_requested_display);
 
                 $view->with('asset_requested_display_to_owner', $asset_requested_display_to_owner);
@@ -320,6 +320,12 @@ class AppServiceProvider extends ServiceProvider
                 $research_project_data = DB::table('research_project')
                     ->where('student_reference', Auth::user()->email)
                     ->first();
+
+                $research_project_category = DB::table('research_project')
+                    ->where('should_be_approved_by', Auth::user()->email)
+                    ->get();
+
+                // dd($research_project_category);
 
                 $all_research_profile = DB::table('research_project')
                     ->get();
@@ -339,6 +345,7 @@ class AppServiceProvider extends ServiceProvider
                     ->orderBy('space_request.created_at', 'DESC') //descending order
                     ->get();
 
+                $view->with('research_project_category', $research_project_category);
 
                 $view->with('all_message', $all_message);
                 $view->with('all_space_requested_requested', $all_space_requested_requested);

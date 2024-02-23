@@ -117,9 +117,15 @@ class AssetController extends Controller
     {
         return view('staff.asset_requested');
     }
-    public function my_student()
+    public function my_student($student_reference)
     {
-        return view('staff.asset_requested_process');
+        $dcrypted_student_reference = Crypt::decryptString($student_reference);
+
+        return view('staff.asset_requested_process', ['dcrypted_student_reference' => $dcrypted_student_reference]);
+    }
+    public function my_student_supervision()
+    {
+        return view('staff.my_student_supervision');
     }
 
     public function my_student_feedback($reference_student, $feedback)

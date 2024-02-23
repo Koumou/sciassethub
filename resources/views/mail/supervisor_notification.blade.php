@@ -81,7 +81,7 @@
                                 </p>
                                 
                                 <p style="text-align: center;margin: 2.5em auto;">
-                                    <a class="button" href="/supervisor_confirmation/{{Illuminate\Support\Facades\Crypt::encryptString($details['supervisor_email'])}}/{{Illuminate\Support\Facades\Crypt::encryptString(Auth::user()->email)}}" style="background: #DE4D3B; 
+                                    <a class="button" href="supervisor_confirmation/{{Illuminate\Support\Facades\Crypt::encryptString($details['supervisor_email'])}}/{{Illuminate\Support\Facades\Crypt::encryptString(Auth::user()->email)}}" style="background: #DE4D3B; 
                        text-decoration: none; 
                        padding: 1em 1.5em;
                        color: #ffffff; 
